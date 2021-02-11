@@ -1,0 +1,162 @@
+div.gallery {
+    border: 5px solid #070707;
+    background-color:#020202;
+    
+  }
+  
+  div.gallery:hover {
+    border: 10px solid #b32137;
+    background-color: #b32137;
+    color: black;
+
+    
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    
+  }
+  div.gallery:hover .desc {
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+  }
+  
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    display: grid ;
+    
+    
+  }
+  .bodystyle {
+    
+    width: auto;
+    height: 600px;
+    background-color: white;
+    
+  }
+  
+ 
+ 
+  <!--EVENT -->
+  
+  
+  .bd{
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+  }
+  .slidershow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border: 5px solid #0c0c0c;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-3%);
+  }
+  .navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(5, 5, 5);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(245, 253, 253);
+    
+    
+    
+  }
+  .bar:hover{
+    background:#b32137;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    
+    
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+    
+    
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+  @media screen and (max-width: 700px) {
+    .slidershow{
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      border: 5px solid #020202;
+    }
+    .middle{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,30%);
+    }
+    .responsive {
+     
+      display: unset;
+      float: inherit;
+
+
+    }
